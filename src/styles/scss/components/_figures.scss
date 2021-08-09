@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+}
+ 
+.geometry {
+    position: relative;
+    height: 1000px;
+    width: 1000px;
+    border: solid 2px #000000;
+    margin: 0 auto;
+    }
+
+.square {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    background-color: blue;
+    bottom:25%;
+    left: 25%;
+    z-index: 2;
+
+      &:hover{
+          z-index: 4;
+          background: blueviolet;
+      }
+}
+
+.square__little{
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    background: yellow;
+    top: 37.5%;
+    left: 37.5%;
+    z-index: 3;
+    border-radius: 25%;
+}
+
+.circe {
+    position: absolute;
+    height: 25%;
+    width:25% ;
+    border-radius: 50%;
+    background: red;
+
+      &:hover{
+          z-index: 2;
+          background: aqua;
+      }
+
+        &__up-riht {
+            position: absolute;
+             right: 12.5%;
+            top: 12.5%;
+        }
+
+		&__up-left {
+            position: absolute;
+            left: 12.5%;
+             top: 12.5%;
+		}
+
+		&__down-riht {
+            position: absolute;
+            right: 12.5%;
+            bottom: 12.5%;
+		}
+
+		&__down-left {
+            position: absolute;
+            left: 12.5%;
+            bottom: 12.5%;
+		}
+}
+
+
